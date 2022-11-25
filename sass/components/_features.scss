@@ -1,0 +1,32 @@
+.features-list {
+  display: block;
+  gap: 30px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+.features-list__item {
+  // flex-basis: calc((100% - 90px) / 4);
+}
+.features-list__icon {
+  @include centeredFlex();
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $secondary-bg-color;
+}
+.features-list__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-list__text {
+  color: $primary-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
