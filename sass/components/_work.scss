@@ -1,36 +1,40 @@
 .work-section {
-    padding-top: 0;
+  padding-top: 0;
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
   }
-  .activity {
-    display: flex;
-    gap: 30px;
-  }
-  .activity__item {
-    position: relative;
-    flex-basis: calc((100% - 60px) / 3);
-  }
-  .work-section__title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-  }
-  .activity__overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    min-height: 70px;
-    @include centeredFlex();
-    background-color: rgba(47, 48, 58, 0.8);
-  }
-  .activity__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white-color;
-  }
+}
+.activity {
+  display: flex;
+  gap: 30px;
+}
+.activity__item {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.work-section__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.activity__overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-height: 70px;
+  @include centeredFlex();
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.activity__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}

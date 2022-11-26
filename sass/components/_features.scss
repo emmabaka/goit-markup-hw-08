@@ -1,9 +1,19 @@
 .features-list {
   display: block;
   gap: 30px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: 1200px) {
     display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.features-list__item {
+  @media (min-width: 768px) and (max-width: 1200px) {
+    max-width: 354px;
   }
 }
 .features-list__item:not(:last-child) {

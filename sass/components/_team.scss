@@ -18,11 +18,17 @@
 }
 .members {
   display: block;
-
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+    flex-wrap: wrap;
+  }
   @media (min-width: 1200px) {
     display: flex;
     gap: 30px;
     flex-basis: calc((100% - 90px) / 4);
+    flex-wrap: nowrap;
   }
 }
 .members__card {
@@ -33,6 +39,10 @@
   @media (max-width: 767px) {
     max-width: 450px;
     max-height: 622px;
+  }
+  @media (min-width: 768px) {
+    max-width: 354px;
+    max-height: 536px;
   }
 }
 @media (max-width: 767px) {

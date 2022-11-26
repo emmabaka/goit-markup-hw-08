@@ -74,10 +74,14 @@
 .form__checkbox-label {
   @include centeredFlex();
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form__checkbox-link {
   color: $accent-color;

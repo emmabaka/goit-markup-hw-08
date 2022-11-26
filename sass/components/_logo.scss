@@ -19,5 +19,8 @@
   color: $white-color;
 }
 .page-footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  @media (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }

@@ -8,9 +8,18 @@
     flex-wrap: nowrap;
   }
 }
+.customers__item {
+  @media (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .customers__link {
   @include centeredFlex();
-  width: 210px;
+  width: 100%;
+  max-width: 210px;
   height: 92px;
   border: 1px solid $icon-soc-color;
   border-radius: 4px;
@@ -23,16 +32,23 @@
     fill: $accent-color;
     border: 1px solid $accent-color;
   }
+
+  @media (min-width: 768px) {
+    max-width: 226px;
+  }
   @media (min-width: 1200px) {
-    width: 170px;
-    height: 92px;
+    max-width: 170px;
   }
 }
 .clients-section__title {
   color: $title-text-color;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
