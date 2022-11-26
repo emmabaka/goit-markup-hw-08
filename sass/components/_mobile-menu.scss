@@ -84,11 +84,14 @@
   position: relative;
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
+  @media (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 .social-mobile__item:not(:last-child)::after {
   position: absolute;
