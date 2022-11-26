@@ -10,20 +10,21 @@
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   @media (min-width: 1200px) {
     gap: 50px;
     flex-direction: row;
   }
 }
-.menu {
+.menu-nav {
   display: none;
   @media (min-width: 768px) {
     display: flex;
     gap: 50px;
   }
 }
-.menu__link {
+.menu-nav__link {
   color: $title-text-color;
   font-weight: 500;
   font-size: 14px;
@@ -62,10 +63,12 @@
     fill: $accent-color;
   }
   @media (min-width: 768px) {
-    padding: 10px 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
-.menu__link--current {
+.menu-nav__link--current {
   position: relative;
   color: $accent-color;
 

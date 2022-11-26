@@ -1,19 +1,23 @@
 .logo {
-    display: inline-block;
-    color: $accent-color;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+  display: inline-block;
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  @media (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
-    letter-spacing: 0.03em;
   }
-  .page-header__logo-accent {
-    color: $black-color;
-  }
-  .page-footer__logo-accent {
-    color: $white-color;
-  }
-  .page-footer__logo {
-    margin-bottom: 20px;
-  }
+}
+.page-header__logo-accent {
+  color: $black-color;
+}
+.page-footer__logo-accent {
+  color: $white-color;
+}
+.page-footer__logo {
+  margin-bottom: 20px;
+}

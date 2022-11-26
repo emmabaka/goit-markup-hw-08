@@ -6,8 +6,9 @@
     display: flex;
   }
 }
-.features-list__item {
+.features-list__item:not(:last-child) {
   // flex-basis: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
 }
 .features-list__icon {
   @include centeredFlex();
@@ -23,10 +24,14 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 .features-list__text {
   color: $primary-text-color;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  // margin-bottom: 30px;
 }

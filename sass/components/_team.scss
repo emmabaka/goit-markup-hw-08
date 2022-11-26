@@ -1,12 +1,20 @@
 .team-section {
   background-color: $secondary-bg-color;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .team-section__title {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  @media (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .members {
   display: block;
@@ -22,6 +30,15 @@
   box-shadow: 0px 1px 3px $cards-shadow, 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  @media (max-width: 767px) {
+    max-width: 450px;
+    max-height: 622px;
+  }
+}
+@media (max-width: 767px) {
+  .members__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 .members__name {
   margin-bottom: 10px;

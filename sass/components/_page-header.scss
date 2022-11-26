@@ -1,7 +1,21 @@
 .page-header {
-    background-color: $white-color;
-    border-bottom: 1px solid #ececec;
+  position: relative;
+  background-color: $white-color;
+  border-bottom: 1px solid #ececec;
+}
+.page-header__conteiner {
+  @include centeredFlex($type: space-between);
+  width: 100%;
+  @media (max-width: 767px) {
+    display: block;
   }
-  .page-header__conteiner {
-    @include centeredFlex($type:space-between);
+}
+.page-header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    height: 60px;
   }
+}
