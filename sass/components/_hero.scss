@@ -27,7 +27,7 @@
 
   @media (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-      url("../../images/hero-img@2x.jpg");
+      url("../images/hero-img@2x.jpg");
   }
 
   @media (min-width: 768px) {
@@ -39,7 +39,7 @@
           $hero-gradient,
           $hero-gradient
         ),
-        url("../../images/hero-img-tablet@2x.jpg");
+        url("../images/hero-img-tablet@2x.jpg");
     }
   }
   @media (min-width: 1200px) {
@@ -52,7 +52,7 @@
           $hero-gradient,
           $hero-gradient
         ),
-        url("../../images/hero-img-notebook@2x.jpg");
+        url("../images/hero-img-notebook@2x.jpg");
     }
   }
 }
