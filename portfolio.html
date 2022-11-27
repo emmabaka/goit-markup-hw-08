@@ -132,20 +132,24 @@
         <div class="container">
           <h1 class="visually-hidden">Наші роботи</h1>
           <ul class="list buttons-nav">
-            <li>
-              <button class="buttons-nav__item" type="button">Усі</button>
+            <li class="buttons-nav__item">
+              <button class="buttons-nav__button" type="button">Усі</button>
             </li>
-            <li>
-              <button class="buttons-nav__item" type="button">Веб-сайти</button>
+            <li class="buttons-nav__item">
+              <button class="buttons-nav__button" type="button">
+                Веб-сайти
+              </button>
             </li>
-            <li>
-              <button class="buttons-nav__item" type="button">Додатки</button>
+            <li class="buttons-nav__item">
+              <button class="buttons-nav__button" type="button">Додатки</button>
             </li>
-            <li>
-              <button class="buttons-nav__item" type="button">Дизайн</button>
+            <li class="buttons-nav__item">
+              <button class="buttons-nav__button" type="button">Дизайн</button>
             </li>
-            <li>
-              <button class="buttons-nav__item" type="button">Маркетинг</button>
+            <li class="buttons-nav__item">
+              <button class="buttons-nav__button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="list project-list">
@@ -156,7 +160,33 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img src="./images/laptop.jpg" alt="Ноутбук" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/laptop-480.jpg    1x,
+                        ./images/laptop-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/laptop-768.jpg    1x,
+                        ./images/laptop-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/laptop-1200.jpg    1x,
+                        ./images/laptop-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/laptop-480.jpg" alt="Ноутбук" />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -176,11 +206,36 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img
-                    src="./images/basketball.jpg"
-                    alt="Два баскетболісти"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/basketball-480.jpg    1x,
+                        ./images/basketball-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketball-768.jpg    1x,
+                        ./images/basketball-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketball-1200.jpg    1x,
+                        ./images/basketball-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      src="./images/basketball-480.jpg"
+                      alt="Два баскетболісти"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -203,11 +258,36 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="Лого ресторану з рибою"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood-480.jpg    1x,
+                        ./images/seafood-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-768.jpg    1x,
+                        ./images/seafood-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-1200.jpg    1x,
+                        ./images/seafood-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      src="./images/seafood-480.jpg"
+                      alt="Лого ресторану з рибою"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -227,11 +307,33 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img
-                    src="./images/earphones.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/earphones-480.jpg    1x,
+                        ./images/earphones-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/earphones-768.jpg    1x,
+                        ./images/earphones-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/earphones-1200.jpg    1x,
+                        ./images/earphones-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/earphones-480.jpg" alt="Навушники" />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -252,7 +354,33 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img src="./images/boxes.jpg" alt="Дві коробки" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes-480.jpg    1x,
+                        ./images/boxes-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-768.jpg    1x,
+                        ./images/boxes-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-1200.jpg    1x,
+                        ./images/boxes-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/boxes-480.jpg" alt="Дві коробки" />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -272,11 +400,36 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img
-                    src="./images/display.jpg"
-                    alt="Могітор коп'ютера"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/display-480.jpg    1x,
+                        ./images/display-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/display-768.jpg    1x,
+                        ./images/display-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/display-1200.jpg    1x,
+                        ./images/display-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      src="./images/display-480.jpg"
+                      alt="Монітор коп'ютера"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -298,7 +451,33 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img src="./images/magazine.jpg" alt="Журнал" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/magazine-480.jpg    1x,
+                        ./images/magazine-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/magazine-768.jpg    1x,
+                        ./images/magazine-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/magazine-1200.jpg    1x,
+                        ./images/magazine-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/magazine-480.jpg" alt="Журнал" />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -318,11 +497,33 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img
-                    src="./images/label.jpg"
-                    alt="Лейбла з мотузкою"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/label-480.jpg    1x,
+                        ./images/label-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/label-768.jpg    1x,
+                        ./images/label-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/label-1200.jpg    1x,
+                        ./images/label-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img src="./images/label-480.jpg" alt="Лейбла з мотузкою" />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -342,11 +543,36 @@
                 rel="noopener noreferrer nofollow"
               >
                 <div class="project-card__overlay">
-                  <img
-                    src="./images/notebook.jpg"
-                    alt="Руки друкують на клавіатурі"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/notebook-480.jpg    1x,
+                        ./images/notebook-480@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/notebook-768.jpg    1x,
+                        ./images/notebook-768@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/notebook-1200.jpg    1x,
+                        ./images/notebook-1200@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      src="./images/notebook-480.jpg"
+                      alt="Руки друкують на клавіатурі"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу

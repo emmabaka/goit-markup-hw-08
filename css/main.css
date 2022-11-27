@@ -1221,12 +1221,19 @@ img {
 
 .buttons-nav {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .buttons-nav {
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
 }
 
-.buttons-nav__item {
+.buttons-nav__button {
   padding: 6px 22px;
   color: #212121;
   background-color: #f5f4fa;
@@ -1240,16 +1247,27 @@ img {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buttons-nav__item:hover {
+.buttons-nav__button:hover {
   background-color: #2196f3;
   color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
-.buttons-nav__item:focus {
+.buttons-nav__button:focus {
   background-color: #2196f3;
   color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 767px) {
+  .buttons-nav__button {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .buttons-nav__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .project-list {
@@ -1287,9 +1305,19 @@ img {
 }
 
 .project-card {
-  width: 370px;
+  width: 450px;
   border: 1px solid #eeeeee;
   border-top: 0;
+}
+@media (min-width: 1200px) {
+  .project-card {
+    width: 370px;
+  }
+}
+@media (min-width: 768px) {
+  .project-card {
+    width: 354px;
+  }
 }
 
 .project-card__footer {
